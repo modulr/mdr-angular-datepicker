@@ -1,0 +1,29 @@
+{
+  "name": "angular-mdr-datepicker",
+  "version": "1.0.0",
+  "description": "Bootstrap Datepicker for angular",
+  "main": "dist/mdr-datepicker.js",
+  "authors": [
+    "Alfredo Barron"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "modulr",
+    "datepicker",
+    "date",
+    "angular",
+    "bootstrap",
+    "components",
+    "directive"
+  ],
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*"
+  ],
+  "dependencies": {
+    "angular": "angularjs#~1.4.8",
+    "bootstrap": "~3.3.6",
+    "bootstrap-datepicker": "~1.5.0"
+  }
+}
