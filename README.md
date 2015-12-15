@@ -23,8 +23,8 @@ Several quick start options are available:
 
 - [Download the latest release](https://github.com/Modulr/angular-bootstrap-datepicker/archive/master.zip)
 - Clone the repo: `git clone https://github.com/Modulr/angular-bootstrap-datepicker.git`.
-- Install with [Bower](http://bower.io/): `bower install mdr-angular-bootstrap-datepicker`.
-- Install with [npm](https://www.npmjs.com): `npm install mdr-angular-bootstrap-datepicker`.
+- Install with [Bower](http://bower.io/): `bower install mdr-angular-datepicker`.
+- Install with [npm](https://www.npmjs.com): `npm install mdr-angular-datepicker`.
 
 ##What's included
 
