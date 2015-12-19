@@ -10,20 +10,20 @@
     * @param format {string}
     * @param placeholder {string}
     * @param disabled {boolean}
-    * @param required {attribute}
-    * <mdr-datepicker model="" date="" format="" placeholder="" disabled="" required></mdr-datepicker>
+    * @param required {boolean}
     */
     return {
       restrict: 'E',
+      controller: 'mdrDatepickerCtrl',
       scope: {
         model: '=',
         date: '=',
         format: '@',
         placeholder: '@',
-        disabled: '='
+        disabled: '=',
+        required: '='
       },
-      controller: 'mdrDatepickerCtrl',
-      template: '<input type="text" class="form-control datepicker" id="datepickerId_{{$id}}" placeholder="{{placeholder}}" ng-model="model" ng-disabled="disabled">'
+      template: '<input type="text" class="form-control datepicker" id="datepickerId_{{$id}}" placeholder="{{placeholder}}" ng-model="model" ng-disabled="disabled" ng-required="required">'
     };
   }])
   .controller('mdrDatepickerCtrl', ['$scope', '$element', '$attrs', '$filter', function($scope, $element, $attrs, $filter){
@@ -35,7 +35,6 @@
       if(newValue !== undefined){
         if(newValue !== '0000-00-00'){
           var date = $filter('date')(newValue, $scope.format);
-          console.log(date);
           $("#datepickerId_" + $scope.$id).datepicker('update', date);
         }else{
           $("#datepickerId_" + $scope.$id).datepicker('update', '');
@@ -53,12 +52,6 @@
         todayHighlight: true,
         //language:"es"
       });
-      setTimeout(function() {
-        // Si la directiva contiene el attr required se agrega el attr required al datepicker
-        if($attrs.required){
-          $("#datepickerId_" + $scope.$id).attr('required','required');
-        }
-      },0);
     }
 
   }]);

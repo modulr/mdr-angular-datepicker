@@ -8,6 +8,7 @@ Angular Bootstrap Datepicker is an Angularjs component that can replacement for 
 ##Features
 
 - Uses the native Angularjs scope for data binding
+- Fast and lightweight
 - Formats support
 
 
@@ -62,7 +63,7 @@ angular.module('MyApp', ['mdr.datepicker'])
 > Complete Directive (All attributes)
 
 ```html
-<mdr-datepicker model="input" date="output" format="d/M/yyyy" placeholder="dd/M/yyyy" disabled="true" required></mdr-datepicker>
+<mdr-datepicker model="input" date="output" format="d/M/yyyy" placeholder="dd/M/yyyy" disabled="true" required="true"></mdr-datepicker>
 ```
 
 ####API
@@ -76,6 +77,7 @@ date | `date` | *Get date (Output).*
 format | `string` | *It is date format.*
 placeholder | `string` | *Text into placeholder.*
 disabled | `boolean` | *If required disable the component is marked as true.*
+required | `boolean` | *If is required the component is marked as true.*
 
 ##How to contribute
 
