@@ -1,9 +1,9 @@
 # Angular Bootstrap Datepicker
 Angular Bootstrap Datepicker is an Angularjs component that can replacement for datepicker boxes.
 
-- [Demo](http://modulr.io/components/angular-bootstrap-datepicker/)
+- [Demo](http://modulr.io/components/mdr-angular-datepicker/)
 
-![](http://modulr.io/img/preview/angular-bootstrap-datepicker.png)
+![](http://modulr.io/img/preview/mdr-angular-datepicker.png)
 
 ##Features
 
@@ -22,15 +22,15 @@ Angular Bootstrap Datepicker is an Angularjs component that can replacement for 
 
 Several quick start options are available:
 
-- [Download the latest release](https://github.com/Modulr/angular-bootstrap-datepicker/archive/master.zip)
-- Clone the repo: `git clone https://github.com/Modulr/angular-bootstrap-datepicker.git`.
+- [Download the latest release](https://github.com/Modulr/mdr-angular-datepicker/archive/master.zip)
+- Clone the repo: `git clone https://github.com/Modulr/mdr-angular-datepicker.git`.
 - Install with [Bower](http://bower.io/): `bower install mdr-angular-datepicker`.
 - Install with [npm](https://www.npmjs.com): `npm install mdr-angular-datepicker`.
 
 ##What's included
 
 ```
-angular-bootstrap-datepicker/
+mdr-angular-datepicker/
   dist/
     ├── mdr-datepicker.js
     └── mdr-datepicker.min.js
@@ -43,7 +43,7 @@ angular-bootstrap-datepicker/
 ######Load JS
 
 ```html
-<script href="angular-bootstrap-datepicker/dist/mdr-datepicker.min.js"></script>
+<script href="mdr-angular-datepicker/dist/mdr-datepicker.min.js"></script>
 ```
 
 ######Code
@@ -83,14 +83,14 @@ required | `boolean` | *If is required the component is marked as true.*
 
 All contributions are very welcome, We love it. There are several ways to help out:
 
-- Create an [issue](https://github.com/Modulr/angular-bootstrap-datepicker/issues) on GitHub, if you have found a bug
+- Create an [issue](https://github.com/Modulr/mdr-angular-datepicker/issues) on GitHub, if you have found a bug
 - Write test cases for open bug issues
 - Write patches for open bug/feature issues, preferably with test cases included
 - Contribute to the documentation
 
 There are a few guidelines that we need contributors to follow so that we have a chance of keeping on top of things.
 
-If you want to making changes Better avoid working directly on the `master` branch, to avoid conflicts if you pull in updates from origin, so, if make your contribution under the branch [`dev`](https://github.com/Modulr/angular-bootstrap-datepicker/tree/dev), into folder `src/`.
+If you want to making changes Better avoid working directly on the `master` branch, to avoid conflicts if you pull in updates from origin, so, if make your contribution under the branch [`dev`](https://github.com/Modulr/mdr-angular-datepicker/tree/dev), into folder `src/`.
 
 ##Community
 
@@ -102,4 +102,4 @@ If you want to making changes Better avoid working directly on the `master` bran
 
 ## Copyright and license
 
-Code and documentation (c) Copyright 2015 Modulr. Code published under [license MIT](https://github.com/Modulr/angular-bootstrap-datepicker/blob/dev/LICENSE)
+Code and documentation (c) Copyright 2015 Modulr. Code published under [license MIT](https://github.com/Modulr/mdr-angular-datepicker/blob/master/LICENSE)
