@@ -8,6 +8,7 @@
     * @param model {date}
     * @param date {date}
     * @param format {string}
+    * @param zindex {string}
     * @param placeholder {string}
     * @param disabled {boolean}
     * @param required {boolean}
@@ -16,14 +17,15 @@
       restrict: 'E',
       controller: 'mdrDatepickerCtrl',
       scope: {
-        model: '=',
-        date: '=',
+        input: '=',
+        output: '=',
         format: '@',
+        zindex: '@',
         placeholder: '@',
         disabled: '=',
         required: '='
       },
-      template: '<input type="text" class="form-control datepicker" id="datepickerId_{{$id}}" placeholder="{{placeholder}}" ng-model="model" ng-disabled="disabled" ng-required="required">'
+      template: '<input type="text" class="form-control datepicker" id="datepickerId_{{$id}}" placeholder="{{placeholder}}" ng-model="input" ng-disabled="disabled" ng-required="required">'
     };
   }])
   .controller('mdrDatepickerCtrl', ['$scope', '$element', '$attrs', '$filter', function($scope, $element, $attrs, $filter){
@@ -31,15 +33,19 @@
     initialize();
 
     // Si cambia el modelo se asigna el valor
-    $scope.$watch('model', function(newValue, oldValue) {
+    $scope.$watch('input', function(newValue, oldValue) {
       if(newValue !== undefined){
         if(newValue !== '0000-00-00'){
-          var date = $filter('date')(newValue, $scope.format);
-          $("#datepickerId_" + $scope.$id).datepicker('update', date);
+          var newDate = $filter('date')(newValue, $scope.format);
+          setTimeout(function(){
+            $("#datepickerId_" + $scope.$id).datepicker('update', newDate);
+          },0);
         }else{
-          $("#datepickerId_" + $scope.$id).datepicker('update', '');
+          setTimeout(function(){
+            $("#datepickerId_" + $scope.$id).datepicker('update', '');
+          },0);
         }
-        $scope.date = $("#datepickerId_" + $scope.$id).datepicker('getDate');
+        $scope.output = $("#datepickerId_" + $scope.$id).datepicker('getDate');
       }
     });
 
@@ -50,6 +56,7 @@
         format: $scope.format,
         autoclose: true,
         todayHighlight: true,
+        zIndexOffset: $scope.zindex
         //language:"es"
       });
     }

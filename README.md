@@ -22,8 +22,8 @@ Angular Bootstrap Datepicker is an Angularjs component that can replacement for 
 
 Several quick start options are available:
 
-- [Download the latest release](https://github.com/Modulr/mdr-angular-datepicker/archive/master.zip)
-- Clone the repo: `git clone https://github.com/Modulr/mdr-angular-datepicker.git`.
+- [Download the latest release](https://github.com/modulr/mdr-angular-datepicker/archive/master.zip)
+- Clone the repo: `git clone https://github.com/modulr/mdr-angular-datepicker.git`.
 - Install with [Bower](http://bower.io/): `bower install mdr-angular-datepicker`.
 - Install with [npm](https://www.npmjs.com): `npm install mdr-angular-datepicker`.
 
@@ -63,7 +63,7 @@ angular.module('MyApp', ['mdr.datepicker'])
 > Complete Directive (All attributes)
 
 ```html
-<mdr-datepicker model="input" date="output" format="d/M/yyyy" placeholder="dd/M/yyyy" disabled="true" required="true"></mdr-datepicker>
+<mdr-datepicker input="input" output="output" format="d/M/yyyy" placeholder="dd/M/yyyy" disabled="true" required="true"></mdr-datepicker>
 ```
 
 ####API
@@ -72,9 +72,10 @@ angular.module('MyApp', ['mdr.datepicker'])
 
 Attribute | Type | Description
 --- | --- | ---
-model | `date` | *Set date (Input).*
-date | `date` | *Get date (Output).*
+input | `date` | *Set date (Input).*
+output | `date` | *Get date (Output).*
 format | `string` | *It is date format.*
+zindex | `string` | *It is z-index of datepicker.*
 placeholder | `string` | *Text into placeholder.*
 disabled | `boolean` | *If required disable the component is marked as true.*
 required | `boolean` | *If is required the component is marked as true.*
@@ -83,14 +84,14 @@ required | `boolean` | *If is required the component is marked as true.*
 
 All contributions are very welcome, We love it. There are several ways to help out:
 
-- Create an [issue](https://github.com/Modulr/mdr-angular-datepicker/issues) on GitHub, if you have found a bug
+- Create an [issue](https://github.com/modulr/mdr-angular-datepicker/issues) on GitHub, if you have found a bug
 - Write test cases for open bug issues
 - Write patches for open bug/feature issues, preferably with test cases included
 - Contribute to the documentation
 
 There are a few guidelines that we need contributors to follow so that we have a chance of keeping on top of things.
 
-If you want to making changes Better avoid working directly on the `master` branch, to avoid conflicts if you pull in updates from origin, so, if make your contribution under the branch [`dev`](https://github.com/Modulr/mdr-angular-datepicker/tree/dev), into folder `src/`.
+If you want to making changes Better avoid working directly on the `master` branch, to avoid conflicts if you pull in updates from origin, so, if make your contribution under the branch [`dev`](https://github.com/modulr/mdr-angular-datepicker/tree/dev), into folder `src/`.
 
 ##Community
 
@@ -102,4 +103,4 @@ If you want to making changes Better avoid working directly on the `master` bran
 
 ## Copyright and license
 
-Code and documentation (c) Copyright 2015 Modulr. Code published under [license MIT](https://github.com/Modulr/mdr-angular-datepicker/blob/master/LICENSE)
+Code and documentation (c) Copyright 2015 Modulr. Code published under [license MIT](https://github.com/modulr/mdr-angular-datepicker/blob/master/LICENSE)
