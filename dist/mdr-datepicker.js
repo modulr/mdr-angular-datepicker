@@ -45,7 +45,10 @@
             $("#datepickerId_" + $scope.$id).datepicker('update', '');
           },0);
         }
-        $scope.output = $("#datepickerId_" + $scope.$id).datepicker('getDate');
+        setTimeout(function(){
+          $scope.output = $("#datepickerId_" + $scope.$id).datepicker('getDate');
+          $scope.$apply();
+        },0);
       }
     });
 

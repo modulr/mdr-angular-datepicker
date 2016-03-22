@@ -1,6 +1,6 @@
 {
   "name": "mdr-angular-datepicker",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Bootstrap Datepicker for angular",
   "main": "dist/mdr-datepicker.js",
   "authors": [
