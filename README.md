@@ -63,7 +63,7 @@ angular.module('MyApp', ['mdr.datepicker'])
 > Complete Directive (All attributes)
 
 ```html
-<mdr-datepicker input="input" output="output" format="d/M/yyyy" placeholder="dd/M/yyyy" disabled="true" required="true"></mdr-datepicker>
+<mdr-datepicker input="input" output="output" format="d/M/yyyy" lang="es" zindex="10000" placeholder="dd/M/yyyy" disabled="true" required="true"></mdr-datepicker>
 ```
 
 ####API
@@ -75,6 +75,7 @@ Attribute | Type | Description
 input | `date` | *Set date (Input).*
 output | `date` | *Get date (Output).*
 format | `string` | *It is date format.*
+lang | `string` | *It is language of datepicker.*
 zindex | `string` | *It is z-index of datepicker.*
 placeholder | `string` | *Text into placeholder.*
 disabled | `boolean` | *If required disable the component is marked as true.*
