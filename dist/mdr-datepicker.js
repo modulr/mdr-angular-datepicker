@@ -21,6 +21,7 @@
                 input: '=',
                 output: '=',
                 format: '@',
+                lang: '@',
                 zindex: '@',
                 placeholder: '@',
                 disabled: '=',
