@@ -1,7 +1,6 @@
 # Angular Bootstrap Datepicker
 Angular Bootstrap Datepicker is an Angularjs component that can replacement for datepicker boxes.
 
-- [Demo](http://modulr.io/components/mdr-angular-datepicker/)
 
 ![](http://modulr.io/img/preview/mdr-angular-datepicker.png)
 
